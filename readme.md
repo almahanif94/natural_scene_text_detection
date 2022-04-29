@@ -1,4 +1,4 @@
-***Natural Scene Text Detection***
+***Natural Scene Text Extraction***
 
 **To run**
  - Download tesseract for windows/linux from https://github.com/UB-Mannheim/tesseract/wiki
