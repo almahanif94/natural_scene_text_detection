@@ -1,0 +1,53 @@
+<!doctype html>
+
+<body style="margin:0px;">
+<table style="width:100%; border-collapse:collapse; font:14px Arial,sans-serif;">
+    <tr>
+        <td colspan="2" style="padding:10px 20px; background-color:#acb3b9;">
+            <h1 style="font-size:24px;">Natural Scene Text Detection</h1>
+        </td>
+    </tr>
+    <tr style="height:170px;">
+        <td colspan="4" style="width:60%; padding:40px; background-color:#d4d7dc;align-content: center">
+            {% if filename %}
+                <div>
+                    <img style="max-width: 60%; height: auto; " src="{{ url_for('display_image', filename=filename) }}">
+
+                </div>
+
+            {% endif %}
+            <p>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+            </p>
+
+
+        </td>
+        <td style="padding:20px; background-color:#f2f2f2; vertical-align:top;">
+            <form method="post" action="/" enctype="multipart/form-data">
+                <dl>
+                    <p>
+                        <input type="file" name="file" autocomplete="off" required>
+                    </p>
+                </dl>
+                <p>
+                    <input type="submit" value="Get text from Image">
+                </p>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding:5px; background-color:#acb3b9; text-align:center;">
+            <p>Copyright &copy; Siemens Healthineers</p>
+        </td>
+    </tr>
+</table>
+
+</body>

@@ -1,0 +1,32 @@
+To run:
+
+pip install -r requirements.txt
+
+
+Next Stepy
+Pre Process images using these
+
+- connected component recognize boxes 
+- zoom these boxes (resize image)
+- try to recognize these 
+
+
+app that takes image,  extract the patient id
+
+
+--tons of product in patients id 
+--live picture of the screen , 
+--identify patient identifier , patient context 
+-- elastic system ,  patient system on PC , 
+-- tuple of patient id to query over patient 
+-- coronary ngo 
+-- results in database 
+-- machine communication/sementic search 
+-- try out sementic products without touching those products
+
+-- document on one drive , alternative technology steps , like flask is the one 
+-- it should be simple and working with the smart phone
+-- ideally a web application 
+
+--Digital-Interface clone it 
+-- 
